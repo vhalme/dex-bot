@@ -21,12 +21,14 @@ npm start
 This tool buys or sells the entire balance of a specified token in the pair
 
 ```shell
-npm run src/pumpOrDump.ts <token1> <token2> <action>
+npm run src/pumpOrDump.ts <token1> token2> <action>
 ```
 
-#### <token1>: Reserve token name if configured (eg. WBNB) or token contract address
-#### <token2>: Shit token's name if configured (eg. DARK) or token contract address
-#### <action>: 'pump' | 'dump'
+Command line arguments:
+
+token1: Reserve token name if configured (eg. WBNB) or token contract address
+token2: Shit token's name if configured (eg. DARK) or token contract address
+action: 'pump' | 'dump'
 Pump sells all of token1 for token2
 Dump reverses the pump selling all of token2 for token1
 
