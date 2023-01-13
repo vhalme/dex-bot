@@ -40,9 +40,9 @@ npm run src/pumpOrDump.ts WBNB 0xBc7d6B50616989655AfD682fb42743507003056D dump
 npm run src/pumpOrDump.ts 0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c 0xBc7d6B50616989655AfD682fb42743507003056D pump
 ```
 
-### Getting transaction receipt
+### Getting a transaction receipt
 
-This tool buys or sells the entire balance of a specified token in the pair
+A tool for getting a transaction receipt
 
 ```shell
 npm run src/getTxReceipt.ts 0xf90efa044b4a5c5a0da0ba1c9dc3c7a5e53962818c6a7a0d496abcab759736fb
