@@ -13,7 +13,10 @@ export async function quotePair() {
     }
     
     // Connect to the BSC mainnet
-    const provider = ethers.getDefaultProvider();
+    // const provider = ethers.getDefaultProvider();
+    const provider = new ethers.providers.JsonRpcProvider(
+        'https://polygon-rpc.com/'
+    );
 
     // Sign the transaction with the contract owner's private key
     const wallet = new ethers.Wallet(PRIVATE_KEY, provider);
@@ -26,8 +29,8 @@ export async function quotePair() {
 
     console.log(walletAddress + ':', walletBalance.toBigInt())
 
-    const tokenAAddress = '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48' // USDC
-    const tokenBAddress = '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2' // WETH
+    const tokenAAddress = '0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174' // USDC
+    const tokenBAddress = '0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619' // WETH
 
     const txInputs = [
         tokenAAddress,
